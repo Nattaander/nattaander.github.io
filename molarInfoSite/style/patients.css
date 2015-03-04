@@ -1,0 +1,173 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+* {
+  font-family: 'PT Sans', Arial, sans-serif;
+}
+
+body {
+  padding-bottom: 20px;
+  color: #fff;
+  background-image: url("../media/uccblur.jpg");
+  background-repeat: repeat-y;
+}
+
+
+
+/*==========================================================
+
+BOOTSTRAP 
+
+==========================================================*/
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 60px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.marketing {
+    margin-top: 15px;
+}
+
+
+
+/*==========================================================
+
+NON-BOOTSTRAP
+
+==========================================================*/
+
+/* Header and Animation */
+.jumboHead {
+  width:100vw;
+  height: 200px;
+  background-color: rgba(243, 55, 20, .6);
+  z-index: 10;
+}
+
+/* ------------------- */
+
+
+/* Header Text and Animation */
+.jumboHead h1 {
+  font-size: 24pt;
+  float: left;
+}
+
+.jumboHead h1, p {
+  z-index: 1;
+  -webkit-animation: introHead 2s;
+  animation: introHead 2s;
+}
+
+@-webkit-keyframes introHead {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes introHead {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/* ------------------- */
+
+
+/* Option buttons and Animation */
+.options {
+  width: 300px;
+  height: auto;
+  z-index: -1;
+
+  -webkit-transition: width 1s, margin-left .3s; /* For Safari 3.1 to 6.0 */
+  -moz-transition: width 1s, margin-left .3s;
+  -o-transition: width 1s, margin-left .3s;
+  transition: width 1s, margin-left .3s;
+
+  -webkit-animation: introPop 4s;
+  animation: introPop 4s;
+}
+
+@-webkit-keyframes introPop {
+    0%   {width: 0px;}
+    20%  {width: 0px;}
+    50%  {width: 0px;}
+    100% {width: 300px;}
+}
+
+@keyframes introPop {
+    0%   {width: 0px;}
+    20%  {width: 0px;}
+    50%  {width: 0px;}
+    100% {width: 300px;}
+}
+
+.options:hover {
+  width: 330px;
+  margin-left: -7px;
+}
+
+#patientOp {
+  width: 350px;
+  height: auto;
+  margin-left: 0px;
+  z-index: -1;
+
+  -webkit-transition: width 1s, margin-left .3s; /* For Safari 3.1 to 6.0 */
+  -moz-transition: width 1s, margin-left .3s;
+  -o-transition: width 1s, margin-left .3s;
+  transition: width 1s, margin-left .3s;
+
+  -webkit-animation: introPopP 4s;
+  animation: introPopP 4s;
+}
+
+#patientOp:hover {
+  width: 380px;
+  margin-left: -10px;
+}
+
+@-webkit-keyframes introPopP {
+    0%   {width: 0px;}
+    20%  {width: 0px;}
+    50%  {width: 0px;}
+    100% {width: 350px;}
+}
+
+@keyframes introPopP {
+    0%   {width: 0px;}
+    20%  {width: 0px;}
+    50%  {width: 0px;}
+    100% {width: 350px;}
+}
+
+/* ------------------- */
+
+
+/* Options Header style*/
+.optionsHeader {
+  color: #eee;
+  /*background-color: rgba(130, 130, 210, .8);*/
+  background: -webkit-radial-gradient(rgba(80, 80, 160, .7), rgba(100, 100, 180, .7), rgba(130, 130, 210, .7)); /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(rgba(80, 80, 160, .7), rgba(100, 100, 180, .7), rgba(130, 130, 210, .7)); /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(rgba(80, 80, 160, .7), rgba(100, 100, 180, .7), rgba(130, 130, 210, .7)); /* For Firefox 3.6 to 15 */
+  background: radial-gradient(rgba(80, 80, 160, .7), rgba(100, 100, 180, .7), rgba(130, 130, 210, .7)); /* Standard syntax (must be last) */
+  padding: 10px;
+  border-style: solid;
+  border-radius: 30px;
+  border-color: rgba(0,0,0,0);
+  -webkit-animation: introHead 7s;
+  animation: introHead 7s;
+}
+
+/* ------------------- */
+
+/*==========================================================*/
