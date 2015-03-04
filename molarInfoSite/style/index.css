@@ -6,10 +6,10 @@
 }
 
 body {
-  padding-bottom: 20px;
   color: #fff;
   background-image: url("../media/uccblur.jpg");
   background-repeat: repeat-y;
+  overflow-x: hidden;
 }
 
 
@@ -51,6 +51,8 @@ NON-BOOTSTRAP
   background-color: rgba(130, 130, 210, .3);
   z-index: 10;
 
+  /* add transitions and combine with JS to retreat the jumbo */
+
   -webkit-animation: introDrop 2s; /*change to alternate for reverse*/
   animation: introDrop 2s;
 }
@@ -70,7 +72,7 @@ NON-BOOTSTRAP
 
 /* Header Text and Animation */
 .jumboHead h1 {
-  font-size: 36pt;
+  font-size: 32pt;
 }
 
 .jumboHead h1, p {

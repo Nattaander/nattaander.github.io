@@ -32,7 +32,10 @@ function writeStatus(msg, div) { //writes content into the chosen div
 
 
 function selectedOption(selection) {
-  var options = getElementsByClassName("options");
+  //var options = getElementsByClassName("options");
 
-  
+  var titleBar = document.getElementById("jumbotitle");
+
+  titleBar.style.animationDirection = "alternate", titleBar.style.WebkitAnimationDirection = "alternate";
+  titleBar.style.animationPlayState = "running", titleBar.style.WebkitAnimationPlayState = "running";
 }
