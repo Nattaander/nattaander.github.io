@@ -36,6 +36,5 @@ function selectedOption(selection) {
 
   var titleBar = document.getElementById("jumbotitle");
 
-  titleBar.style.animationDirection = "alternate", titleBar.style.WebkitAnimationDirection = "alternate";
-  titleBar.style.animationPlayState = "running", titleBar.style.WebkitAnimationPlayState = "running";
+  titleBar.className = "jumbotron jumboHeadReverse";
 }

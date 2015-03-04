@@ -67,11 +67,36 @@ NON-BOOTSTRAP
     100% {margin-top: 0px;}
 }
 
+.jumboHeadReverse {
+  width:100vw;
+  background-color: rgba(130, 130, 210, .3);
+  z-index: 10;
+
+  -webkit-animation: selectionRetreat 2s;
+  animation: selectionRetreat 2s;
+
+  margin-top: -380px;
+}
+
+@-webkit-keyframes selectionRetreat {
+    0%   {margin-top: 0px;}
+    100% {margin-top: -380px;}
+}
+
+@keyframes selectionRetreat {
+    0%   {margin-top: 0px;}
+    100% {margin-top: -380px;}
+}
+
 /* ------------------- */
 
 
 /* Header Text and Animation */
 .jumboHead h1 {
+  font-size: 32pt;
+}
+
+.jumboHeadReverse h1 {
   font-size: 32pt;
 }
 
