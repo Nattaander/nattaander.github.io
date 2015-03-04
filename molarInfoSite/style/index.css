@@ -53,16 +53,29 @@ NON-BOOTSTRAP
 
   -webkit-animation: introDrop 2s;
   animation: introDrop 2s;
+
+  -webkit-animation: selectionRetreat 4s;
+  animation: selectionRetreat 4s;
 }
 
 @-webkit-keyframes introDrop {
-    0%   {margin-top: -200px;}
+    0%   {margin-top: -400px;}
     100% {margin-top: 0px;}
 }
 
 @keyframes introDrop {
-    0%   {margin-top: -200px;}
-    100% {opacity: 1;}
+    0%   {margin-top: -400px;}
+    100% {margin-top: 0px;}
+}
+
+@-webkit-keyframes selectionRetreat {
+    0%   {margin-top: 0px;}
+    100% {margin-top: -400px;}
+}
+
+@keyframes selectionRetreat {
+    0%   {margin-top: 0px;}
+    100% {margin-top: -400px;}
 }
 
 /* ------------------- */
