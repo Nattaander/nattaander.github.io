@@ -34,5 +34,5 @@ function writeStatus(msg, div) { //writes content into the chosen div
 function selectedOption(selection) {
   var options = getElementsByClassName("options");
 
-
+  
 }

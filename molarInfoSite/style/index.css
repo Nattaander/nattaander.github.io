@@ -51,11 +51,8 @@ NON-BOOTSTRAP
   background-color: rgba(130, 130, 210, .3);
   z-index: 10;
 
-  -webkit-animation: introDrop 2s;
+  -webkit-animation: introDrop 2s; /*change to alternate for reverse*/
   animation: introDrop 2s;
-
-  -webkit-animation: selectionRetreat 4s;
-  animation: selectionRetreat 4s;
 }
 
 @-webkit-keyframes introDrop {
@@ -66,16 +63,6 @@ NON-BOOTSTRAP
 @keyframes introDrop {
     0%   {margin-top: -400px;}
     100% {margin-top: 0px;}
-}
-
-@-webkit-keyframes selectionRetreat {
-    0%   {margin-top: 0px;}
-    100% {margin-top: -400px;}
-}
-
-@keyframes selectionRetreat {
-    0%   {margin-top: 0px;}
-    100% {margin-top: -400px;}
 }
 
 /* ------------------- */
