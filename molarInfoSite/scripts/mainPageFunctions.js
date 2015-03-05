@@ -30,11 +30,36 @@ function writeStatus(msg, div) { //writes content into the chosen div
 
 /******************************************************/
 
+var direction = "up";
+var options = document.getElementsByClassName("options");
+
+console.log(options[0].id);
 
 function selectedOption(selection) {
-  //var options = getElementsByClassName("options");
-
   var titleBar = document.getElementById("jumbotitle");
 
-  titleBar.className = "jumbotron jumboHeadReverse";
+  for (var i=0; i<options.length; i++) {
+    if(options[i].id != selection) {
+      if(options[i].style.opacity == 1){
+        options[i].style.opacity = 0;
+        console.log(options[i].id + " being made transparent");
+      }
+      else {
+        options[i].style.opacity = 1;
+        console.log(options[i].id + " being made opaque");
+      }
+    }
+  }
+
+  switch(direction) {
+    case "up":
+    titleBar.className = "jumbotron jumboHeadReverse";
+    direction = "down";
+    break;
+
+    case "down":
+    titleBar.className = "jumbotron jumboHead";
+    direction = "up";
+    break;
+  }
 }
