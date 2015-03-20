@@ -30,22 +30,24 @@ function writeStatus(msg, div) { //writes content into the chosen div
 
 /******************************************************/
 
-var direction = "up";
-var options = document.getElementsByClassName("options");
+var direction = "up",
+    options = document.getElementsByClassName("options"),
+    optionsHeaders = document.getElementsByClassName("optionsHeader"),
+    titleBar = document.getElementById("jumbotitle");
 
 console.log(options[0].id);
 
 function selectedOption(selection) {
-  var titleBar = document.getElementById("jumbotitle");
-
   for (var i=0; i<options.length; i++) {
     if(options[i].id != selection) {
       if(options[i].style.opacity == 1){
         options[i].style.opacity = 0;
+        options[i].style.visibility = "hidden";
         console.log(options[i].id + " being made transparent");
       }
       else {
         options[i].style.opacity = 1;
+        options[i].style.visibility = "visible";
         console.log(options[i].id + " being made opaque");
       }
     }
