@@ -1,6 +1,10 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
+
+@font-face {
+  font-family: 'PT Sans', Arial, sans-serif; 
+}
 * {
   font-family: 'PT Sans', Arial, sans-serif;
 }
