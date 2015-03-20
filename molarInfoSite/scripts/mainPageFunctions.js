@@ -17,7 +17,7 @@ function ajaxReq(textDoc, div) {
     		writeStatus(xmlhttp.responseText, div);
     	}
     	else  {
-    		writeStatus("<img src='images/loading.gif' style='width:auto; height:3vw' />", div);
+    		writeStatus("<img src='scripts/images/ajax-loader.gif' style='width:auto; height:3vw' />", div);
     	}
 	}
 	xmlhttp.open("GET",textDoc,true);
