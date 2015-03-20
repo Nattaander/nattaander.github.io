@@ -31,28 +31,13 @@ function writeStatus(msg, div) { //writes content into the chosen div
 /******************************************************/
 
 var direction = "up",
-    options = document.getElementsByClassName("options"),
-    optionsHeaders = document.getElementsByClassName("optionsHeader"),
+    patientIcon = document.getElementById("patientOp"),
+    clinicIcon = document.getElementById("clinicOp"),
     titleBar = document.getElementById("jumbotitle");
 
 console.log(options[0].id);
 
 function selectedOption(selection) {
-  for (var i=0; i<options.length; i++) {
-    if(options[i].id != selection) {
-      if(options[i].style.opacity == 1){
-        options[i].style.opacity = 0;
-        options[i].style.visibility = "hidden";
-        console.log(options[i].id + " being made transparent");
-      }
-      else {
-        options[i].style.opacity = 1;
-        options[i].style.visibility = "visible";
-        console.log(options[i].id + " being made opaque");
-      }
-    }
-  }
-
   switch(direction) {
     case "up":
     titleBar.className = "jumbotron jumboHeadReverse";
@@ -65,3 +50,22 @@ function selectedOption(selection) {
     break;
   }
 }
+
+ /*
+ options = document.getElementsByClassName("options"),
+    optionsHeaders = document.getElementsByClassName("optionsHeader"),
+
+ for (var i=0; i<options.length; i++) {
+    if(options[i].id != selection) {
+      if(options[i].style.opacity == 1){
+        options[i].style.opacity = 0;
+        options[i].style.visibility = "hidden";
+        console.log(options[i].id + " being made transparent");
+      }
+      else {
+        options[i].style.opacity = 1;
+        options[i].style.visibility = "visible";
+        console.log(options[i].id + " being made opaque");
+      }
+    }
+  }*/
