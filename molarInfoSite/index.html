@@ -35,8 +35,8 @@
         <div class="row">
           
           <div class="col-lg-4">
-            <a href="#" role="button"><img class="img-circle options" id="patientOp" src="media/patientEx.png" alt="Patient info image" onClick="selectedOption('patientOp');" style="opacity:1"></a>
-            <h2 class="optionsHeader">Patient or Family</h2>
+            <a href="#" role="button"><img class="img-circle options" id="patientOp" src="media/patientEx.png" alt="Patient info image" onClick="selectedOption('clinicOp', 'patientOp');" style="opacity:1"></a>
+            <h2 class="optionsHeader" id="patientHeader">Patient or Family</h2>
           </div><!-- /.col-lg-4 -->
 
           <div class="col-lg-4">
@@ -44,8 +44,8 @@
           </div>
 
           <div class="col-lg-4">
-            <a href="#" role="button"><img class="img-circle options" id="clinicOp" src="media/clinicianEx.png" alt="Clinician info image" onClick="selectedOption('clinicOp');" style="opacity:1"></a>
-            <h2 class="optionsHeader">Clinician</h2>
+            <a href="#" role="button"><img class="img-circle options" id="clinicOp" src="media/clinicianEx.png" alt="Clinician info image" onClick="selectedOption('patientOp', 'clinicOp');" style="opacity:1"></a>
+            <h2 class="optionsHeader" id="clinicHeader">Clinician</h2>
           </div><!-- /.col-lg-4 -->
           
           <!--<div class="col-lg-4">
@@ -55,11 +55,7 @@
 
         </div><!-- /.row -->
 
-        <div class="row">
-          <center id="patientPg">
-          </center>
-          <center id="clinicPg">
-          </center>
+        <div class="row" id="selectionBox">
         </div>
 
       </div>
@@ -72,6 +68,7 @@
       <script src="scripts/bootstrap.min.js"></script>
       <script src="scripts/docs.min.js"></script>
       <script src="scripts/mainPageFunctions.js"></script>
+      <script src="scripts/jss.min.js"></script>
     </body>
 
     <center>

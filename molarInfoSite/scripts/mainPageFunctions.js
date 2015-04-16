@@ -37,15 +37,41 @@ var direction = "up",
 
 console.log(options[0].id);
 
-function selectedOption(selection) {
+function selectedOption(selection, clickedSelf) {
   switch(direction) {
     case "up":
     titleBar.className = "jumbotron jumboHeadReverse";
+    document.getElementById(selection).className = "optionsHidden";
+    document.getElementById("clinicHeader").className = "optionsHeaderHide";
+    document.getElementById("patientHeader").className = "optionsHeaderHide";
+    
+    jss.set('.options:hover', {
+      'width': '250px'
+    });
+
+    jss.set('.options', {
+      'width': '220px'
+    });
+
+    document.getElementById(clickedSelf).src = String(document.getElementById(clickedSelf).src).replace('.png','Back.png');
     direction = "down";
     break;
 
     case "down":
     titleBar.className = "jumbotron jumboHead";
+    document.getElementById(selection).className = "options";
+    document.getElementById("clinicHeader").className = "optionsHeader";
+    document.getElementById("patientHeader").className = "optionsHeader";
+
+    jss.set('.options:hover', {
+      'width': '350px'
+    });
+
+    jss.set('.options', {
+      'width': '320px'
+    });
+
+    document.getElementById(clickedSelf).src = String(document.getElementById(clickedSelf).src).replace('Back.png','.png');
     direction = "up";
     break;
   }
