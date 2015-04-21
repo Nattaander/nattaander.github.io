@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset=utf-8>
+	<link rel="stylesheet" href="sampleLayout.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
+	<title>Testing Info Send</title>
+</head>
+
+<body>
+<h1 style="color:white; font-size:40pt">InfoSendingTest</h1>
+	<table width=90% style="padding:10px;">
+		<td width=40% style="padding-right:30px;">
+			<table width=100%>
+				<tr>
+					<td class="buttonTD">
+						<button onclick="changeBtn('what')">What?</button>
+					</td>
+				</tr>
+				<tr>
+					<td class="buttonTD">
+						<button onclick="changeBtn('why')">Why ?</button>
+					</td>
+				</tr>
+				<tr>
+					<td class="buttonTD">
+						<button onclick="changeBtn('where')">Where?</button>
+					</td>
+				</tr>
+				<tr>
+					<td class="buttonTD">
+						<button onclick="changeBtn('proc')">Proc</button>
+					</td>
+				</tr>
+				<tr>
+					<td class="buttonTD">
+						<button onclick="changeBtn('look')">What look?</button>
+					</td>
+				</tr>
+			</table>
+		</td>
+			
+			
+		<td style="width:60%; height:600px; padding-left:30px;">
+				<div id="infoBox" style="width:100%; height:600px; background-color:white; padding-top:30px;">Click a button to get information</div>
+				<div id="arrowBox" style="width:100%; height:80px; background-color:#9c9c9c;">
+					<img id="prev" src="media/prev.gif" onclick="" width=8%  style="padding:15px; cursor: pointer;" />
+					<img id="next" src="media/next.gif" onclick="" width=8%  style="padding:15px; cursor: pointer;" />
+				</div>
+		</td>
+	</table>
+	
+	<script src="functionality.js"></script>
+</body>
+
+</html>
