@@ -1,3 +1,5 @@
+<html>
+<body>
 <?php
 
 function get_client_ip() {
@@ -8,3 +10,5 @@ function get_client_ip() {
 echo get_client_ip();
 echo "echos";
 ?>
+</body>
+</html>
