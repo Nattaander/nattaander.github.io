@@ -1,10 +1,6 @@
 <?php
-
-  	function get_client_ip() {
-		$ipaddress = $_SERVER['REMOTE_ADDR'];
-		return $ipaddress;
-	}
-
-	/*echo get_client_ip();*/
-	echo "echos";
+    if ($_GET['ip']):
+        $ip = gethostbyname($_GET['ip']);
+        echo($ip);
+    endif;  
 ?>
