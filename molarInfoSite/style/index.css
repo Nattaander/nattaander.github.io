@@ -256,4 +256,98 @@ NON-BOOTSTRAP
 
 /* ------------------- */
 
+/* Selection box
+-----------------------*/
+
+#selectionBox {
+  display: none;
+  opacity: 0;
+}
+
+.selectionOptions {
+  opacity: 0;
+  width: 0px;
+}
+
+@-webkit-keyframes selectionOptions {
+  0% {opacity: 0; width: 0px;}
+  25% {opacity: 0; width: 0px;}
+  100% {opacity: 1; width: 220px;}
+}
+
+@keyframes selectionOptions {
+  0% {opacity: 0; width: 0px;}
+  25% {opacity: 0; width: 0px;}
+  100% {opacity: 1; width: 220px;}
+}
+
+@-webkit-keyframes selectionOptionsRev {
+  0% {opacity: 1; width: 220px;}
+  25% {opacity: 1; width: 220px;}
+  100% {opacity: 0; width: 0px;}
+}
+
+@keyframes selectionOptionsRev {
+  0% {opacity: 1;  width: 220px;}
+  25% {opacity: 1; width: 220px;}
+  100% {opacity: 0; width: 0px;}
+}
+
+@-webkit-keyframes introSelection {
+    0%   {opacity: 0; display: none;}
+    20%  {opacity: 0; display: none;}
+    30%  {opacity: 0; display: none;}
+    100% {opacity: 1; display: block;}
+}
+
+@keyframes introSelection {
+    0%   {opacity: 0; display: none;}
+    20%  {opacity: 0; display: none;}
+    40%  {opacity: 0; display: none;}
+    100% {opacity: 1; display: block;}
+}
+
+
+@-webkit-keyframes introSelectionRev {
+    0%   {opacity: 1; display: block;}
+    20%  {opacity: 1; display: block;}
+    30%  {opacity: 1; display: block;}
+    100% {opacity: 0; display: none;}
+}
+
+@keyframes introSelectionRev {
+    0%   {opacity: 1; display: block;}
+    20%  {opacity: 1; display: block;}
+    40%  {opacity: 1; display: block;}
+    100% {opacity: 0; display: none;}
+}
+
+.selectionHeader {
+  color: #eee;
+  font-size: 16pt;
+  background: -webkit-radial-gradient(rgba(80, 80, 160, .7), rgba(100, 100, 180, .7), rgba(130, 130, 210, .7)); /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(rgba(80, 80, 160, .7), rgba(100, 100, 180, .7), rgba(130, 130, 210, .7)); /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(rgba(80, 80, 160, .7), rgba(100, 100, 180, .7), rgba(130, 130, 210, .7)); /* For Firefox 3.6 to 15 */
+  background: radial-gradient(rgba(80, 80, 160, .7), rgba(100, 100, 180, .7), rgba(130, 130, 210, .7)); /* Standard syntax (must be last) */
+  padding: 10px;
+  border-style: solid;
+  border-radius: 30px;
+  border-color: rgba(0,0,0,0);
+
+  -webkit-transition: all 2s; /* For Safari 3.1 to 6.0 */
+  -moz-transition: all 2s;
+  -o-transition: all 2s;
+  transition: all 2s;
+}
+
+@-webkit-keyframes newSelections {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes newSelections {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+}
+
 /*==========================================================*/
