@@ -2,6 +2,11 @@
 // AJAX FUNCTIONS
 /******************************************************/
 
+
+function writeStatus(msg, div) { //writes content into the chosen div
+  document.getElementById(div).innerHTML = msg;
+}
+
 function ajaxReq(textDoc, div) {
   var xmlhttp;
 
@@ -11,7 +16,7 @@ function ajaxReq(textDoc, div) {
     xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
   }
 
-  xmlhttp.onreadystatechange = function() {
+  xmlhttp.onreadystatechange = function () {
     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
       writeStatus(xmlhttp.responseText, div);
     } else {
@@ -20,10 +25,6 @@ function ajaxReq(textDoc, div) {
   }
   xmlhttp.open("GET", textDoc, true);
   xmlhttp.send();
-}
-
-function writeStatus(msg, div) { //writes content into the chosen div
-  document.getElementById(div).innerHTML = msg;
 }
 
 /******************************************************/
@@ -62,7 +63,7 @@ function selectedOption(selection, clickedSelf) {
         '-webkit-animation': 'selectionOptions 1s',
         'animation': 'selectionOptions 1s',
         'opacity': '1',
-        'width' : '220px'
+        'width': '220px'
       });
 
       document.getElementById(clickedSelf).src = String(document.getElementById(clickedSelf).src).replace('.png', 'Back.png');
@@ -94,7 +95,7 @@ function selectedOption(selection, clickedSelf) {
         '-webkit-animation': 'selectionOptionsRev 1s',
         'animation': 'selectionOptionsRev 1s',
         'opacity': '0',
-        'width' : '220px'
+        'width': '220px'
       });
 
       document.getElementById(clickedSelf).src = String(document.getElementById(clickedSelf).src).replace('Back.png', '.png');
