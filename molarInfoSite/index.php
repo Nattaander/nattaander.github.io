@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Cork University Hospital Information and support about Molar Pregnancies.">
+    <meta name="author" content="Aaron Bolger">
+    <link rel="icon" href="media/favicon.png">
+
+    <title>Molar Pregnancy Information and Consultation</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="style/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this page -->
+    <link href="style/index.css" rel="stylesheet">
+
+    <!-- non bootstrap font -->
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+    <div class="jumbotron jumboHead" id="jumbotitle" style="text-align:center">
+        <div><img src="media/logo.png" style="width:120px; height:auto" /></div>
+        <h1>Molar Pregnancy Information and Support</h1>
+        <p style="font-size:10pt;">Please select which option best applies to you below to continue</p>
+    </div>
+
+      <div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+
+        <div class="row">
+          
+          <div class="col-lg-4">
+            <a href="#" role="button"><img class="img-circle options" id="patientOp" src="media/patientEx.png" alt="Patient info image" onClick="selectedOption('clinicOp', 'patientOp');" style="opacity:1"></a>
+            <h2 class="optionsHeader" id="patientHeader">Patient or Family</h2>
+          </div><!-- /.col-lg-4 -->
+
+          <div class="col-lg-4">
+
+          </div>
+
+          <div class="col-lg-4">
+            <a href="#" role="button"><img class="img-circle options" id="clinicOp" src="media/clinicianEx.png" alt="Clinician info image" onClick="selectedOption('patientOp', 'clinicOp');" style="opacity:1"></a>
+            <h2 class="optionsHeader" id="clinicHeader">Clinician</h2>
+          </div><!-- /.col-lg-4 -->
+          
+          <!--<div class="col-lg-4">
+            <a href="#" role="button"><img class="img-circle options" id="staffOp" src="media/staffEx.png" alt="Staff login image" onClick="selectedOption('staffOp');" style="opacity:1"></a>
+            <h2 class="optionsHeader">Staff</h2>
+          </div><!-- /.col-lg-4 -->
+
+        </div><!-- /.row -->
+
+        <div class="row" id="selectionBox">
+          <div class="col-lg-4">
+            <a href="#" role="button"><img class="selectionOptions" src="media/info.png" alt="More info Patient"></a>
+            <h2 class="selectionHeader">Molar Pregnancy Information</h2>
+          </div><!-- /.col-lg-4 -->
+
+          <div class="col-lg-4">
+            <a href="#" role="button"><img class="selectionOptions" src="media/treatment.png" alt="Treatment Patient"></a>
+            <h2 class="selectionHeader">Treatment</h2>
+          </div><!-- /.col-lg-4 -->
+
+          <div class="col-lg-4">
+            <a href="#" role="button"><img class="selectionOptions" src="media/faq.png" alt="FAQ Patient"></a>
+            <h2 class="selectionHeader">Frequently Asked Questions</h2>
+          </div><!-- /.col-lg-4 -->
+        </div>
+
+      </div>
+
+
+      <!-- Bootstrap core JavaScript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="scripts/jquery-1.11.2.min.js"></script>
+      <script src="scripts/bootstrap.min.js"></script>
+      <script src="scripts/docs.min.js"></script>
+      <script src="scripts/mainPageFunctions.js"></script>
+      <script src="scripts/jss.min.js"></script>
+    </body>
+
+    <center>
+      <footer style="position:fixed; bottom: -10px; width:100%;">
+        
+        <p style="width:100%; height:60px; background-color:rgba(130, 130, 210, 1);"><a href="#" style="font-size:16pt; color:#dda;">Contact us</a><br>Copyright &copy; Consultants Private Clinic CUH, 2015 &middot; Site by Aaron Bolger</p>
+      </footer>
+    </center>
+</html>
